@@ -1,0 +1,25 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "celestial"
+compatibility_date = "2024-12-30"
+compatibility_flags = ["nodejs_compat"]
+pages_build_output_dir = ".open-next"
+
+# ---- KV Namespace for /api/collect ----
+# Stores user submissions (name, birthday, location, IP, chart signs).
+# Create this before first deploy:
+#   npx wrangler kv namespace create SUBMISSIONS
+# Then paste the returned ID below.
+[[kv_namespaces]]
+binding = "SUBMISSIONS"
+id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
+
+# ---- Environment Variables ----
+# The URL of your deployed astrology microservice (see astrology-service/).
+# Without this, natal/synastry/geocode routes will try to use swisseph
+# directly (which only works in local dev, not on Cloudflare Workers).
+[vars]
+ASTROLOGY_API_URL = "https://your-astrology-service.example.com"
+
+# ---- Secrets (set via `npx wrangler secret put NAME`) ----
+# COLLECT_VIEW_TOKEN — the password for viewing /api/collect data.
+#   Set it with: npx wrangler secret put COLLECT_VIEW_TOKEN

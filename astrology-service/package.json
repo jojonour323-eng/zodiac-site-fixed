@@ -1,0 +1,17 @@
+{
+  "name": "celestial-astrology-service",
+  "version": "1.0.0",
+  "description": "Standalone Node.js microservice that runs Swiss Ephemeris for the Celestial zodiac app. Deploy this to any Node host (Railway, fly.io, Render, VPS).",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "swisseph": "^0.5.17",
+    "all-the-cities": "^3.1.0",
+    "geo-tz": "^8.1.8",
+    "luxon": "^3.7.2"
+  }
+}

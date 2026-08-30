@@ -1,0 +1,22 @@
+# The `swisseph` package is a native C addon and needs a compiler at install
+# time (node-gyp). Nixpacks' default Node image usually has these, but we
+# pin them explicitly so the build never fails on a stripped-down image.
+#
+# IMPORTANT: we pin python311, not python3. Nixpacks' "python3" currently
+# resolves to Python 3.13, which removed the `distutils` module — and
+# node-gyp (used to compile swisseph) still depends on it. Python 3.11
+# still ships distutils, so the native build succeeds.
+[phases.setup]
+nixPkgs = ["nodejs_20", "python311", "gcc", "gnumake"]
+
+[phases.install]
+cmds = ["npm install --include=dev"]
+
+[variables]
+PYTHON = "python3.11"
+
+[phases.build]
+cmds = ["npm run build"]
+
+[start]
+cmd = "npm run start"

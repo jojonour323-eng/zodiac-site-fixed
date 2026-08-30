@@ -1,0 +1,16 @@
+requesting deep for chart A...
+requesting deep for chart B...
+== A ==
+identity: exit before the credits roll | Emotional Ghost
+sun-title: Sun in Leo, 9th house
+sun-first-para: Your identity is built on a stage of big ideas and personal philosophy. You don't just have opinions; you perform them with the dramatic flair of a Leo Sun, needing to be seen as the authority on your own worldview. This
+sections: 15 | ids: sun,moon,mercury,venus,mars,rising,sun-opposition-neptune,mars-opposition-saturn,saturn-opposition-pluto,mercury-opposition-neptune,pattern,visible_hidden,states,blindspots,growth
+soulmate-arch: The Deep Diver (9 sections)
+== B ==
+identity: The Human Safe Space | The Emotional Vault
+sun-title: Sun in Leo, 2nd house
+sun-first-para: Your identity is tied to your own value system and creative output. You need to feel recognized for your unique contributions, not just for showing up. With your Capricorn Saturn retrograde in your 7th house, this need f
+sections: 15 | ids: sun,moon,mercury,venus,mars,rising,mercurysquarepluto,sunsquarepluto,venusoppositionsaturn,marsoppositionpluto,pattern,visible_hidden,states,blindspots,growth
+soulmate-arch: The Nurturing Rebel (9 sections)
+
+PASS: outputs are distinct

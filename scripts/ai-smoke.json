@@ -1,0 +1,22 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "OK-ALIVE",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1787773784,
+  "id": "202608270349448c58c01da8c941c9",
+  "model": "glm-4-plus",
+  "object": "chat.completion",
+  "request_id": "202608270349448c58c01da8c941c9",
+  "usage": {
+    "completion_tokens": 5,
+    "prompt_tokens": 17,
+    "total_tokens": 22
+  }
+}
